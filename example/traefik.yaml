@@ -37,8 +37,3 @@ experimental:
   localPlugins:
     taxsi:
       moduleName: github.com/nzin/taxsi
-
-providers:
-  plugin:
-    taxsi:
-      pollInterval: 2s

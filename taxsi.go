@@ -1,11 +1,10 @@
-// Package plugindemo a demo plugin.
-package plugindemo
+package taxsi
 
 import (
 	"context"
 	"net/http"
 	"os"
-	// "github.com/rs/zerolog/log"
+	//"github.com/rs/zerolog/log"
 )
 
 type Rule struct {
@@ -45,7 +44,7 @@ func New(ctx context.Context, next http.Handler, config *Config, name string) (h
 
 func (t *Taxsi) ServeHTTP(rw http.ResponseWriter, req *http.Request) {
 	//log.With().Str("taxsi", t.name)
-	os.Stdout.WriteString("taxsi log")
+	os.Stdout.WriteString("taxsi log\n")
 
 	t.next.ServeHTTP(rw, req)
 }

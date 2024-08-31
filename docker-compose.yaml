@@ -14,4 +14,4 @@ services:
       - ./example/traefik.yaml:/etc/traefik/traefik.yaml
       - ./example/dynamic.yaml:/etc/traefik/dynamic.yaml
       - ./example/taxsi:/etc/taxsi
-      - .:/root/plugins-local/src/github.com/nzin/taxsi/
+      - .:/plugins-local/src/github.com/nzin/taxsi/
