@@ -1,0 +1,13 @@
+displayName: Taxsi WAF plugin
+type: middleware
+iconPath: .assets/taxsi.png
+
+import: github.com/nzin/taxsi
+
+summary: 'Naxsi like WAF for Traefik'
+
+testData:
+  RulesFile: /foo/bar.rules
+  Rules:
+    Block: "$SQL >= 8"
+    Log: "$SQL >= 8"
